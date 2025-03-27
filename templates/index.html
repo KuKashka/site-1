@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">
+            <img src="{{ url_for('static', filename= 'img/binary-code_2115955.png')}}" width="30" height="30">
+            T-90A
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -46,8 +49,11 @@
           </div>
         </div>
       </nav>
-    <h1>Привіт!</h1>
-    вийди з відси розбійник
+    <main class="container">
+
+     <h1 class="m-5 text-center">Привіт!</h1>
+     <h2 class="m-3 text-center"> Мій блог про програмування </h2>
+    <main>
     <a href="https://learn.logikaschool.com/course">вчись;)</a>
     <img src="https://www.bellingcat.com/app/uploads/2017/04/T-90_-_EDM_September_21__2016-640x427.jpg" alt="">
     <a href="" class="link-btn"> Кнопка-посилання</a>

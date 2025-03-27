@@ -5,6 +5,10 @@ body{
     font-family: Arial, Helvetica, sans-serif ;
 }
 
+nav{
+    background: #092c51;
+}
+
 .link-btn{
     background: #7d0303;
     color: white;
