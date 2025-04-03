@@ -1,12 +1,13 @@
 from flask import Flask, render_template
-
+from sql_sripts import *
 
 app = Flask(__name__)  # Створюємо веб–додаток Flask
 
 
 @app.route("/")  # Вказуємо url-адресу для виклику функції
 def index():
-    return render_template("index.html")  # html-сторінка, що повертається у браузер
+    articles = get_all_aeticles()
+    return render_template("index.html", articles=articles)  # html-сторінка, що повертається у браузер
 
 
 if __name__ == "__main__":
