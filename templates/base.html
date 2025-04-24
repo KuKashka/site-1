@@ -14,7 +14,7 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="{{ url_for('static', filename= 'img/binary-code_2115955.png')}}" width="30" height="30">
-            T-90A
+            Актори
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,9 +50,9 @@
         </div>
       </nav>
     <main class="container">
+      {% block content %}
 
-
-
+      {% endblock content %}
     </main>
 
     
