@@ -1,15 +1,16 @@
 
 nav{
     background: #092c51;
+    color: rgb(255, 255, 255);
 }
 
 .articles{
     display: flex;
     flex-wrap: wrap;
-    justify-self: center;
+    justify-content: center;
     gap: 20px;
 }
 
 .card{
-    background: #881003;
+    background: #b27b44;
 }

@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from sql_sripts import *
 
 app = Flask(__name__)  # Створюємо веб–додаток Flask
@@ -9,6 +9,16 @@ def index():
     articles = get_all_aeticles()
     return render_template("index.html", articles=articles)  # html-сторінка, що повертається у браузер
 
+@app.route("/search")  # Вказуємо url-адресу для виклику функції
+def search():
+    query = request.args.get('query', "")
+    articles = search_articles(query)
+    return render_template("search.html", articles=articles)  # html-сторінка, що повертається у браузер
+
+
+@app.route("/contacts")  # Вказуємо url-адресу для виклику функції
+def contacts():
+    return render_template("contacts.html")
 
 @app.route("/article/<int:article_id>")  # Вказуємо url-адресу для виклику функції
 def article_page(article_id):
